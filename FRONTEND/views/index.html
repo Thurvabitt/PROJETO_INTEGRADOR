@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junte-se a Nós!</title>
+
+     <!--Arquivo Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+     <!--Arquivo css-->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="vh-100 overflow-hidden">
+
+    
+ <!-----------------------------------------------NAVBAR--------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        
+        <div class="container">
+            <a class="navbar-brand fs-4" 
+                style="font-weight: bold;"  
+                href="#">É os guri ñ tem jeito
+            </a>
+            
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                
+                <span 
+                    class="navbar-toggler-icon">
+                </span>
+            </button>
+
+            <!--Sidebar-->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                <!--sidebar header-->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 
+                        class="offcanvas-title" 
+                        id="offcanvasNavbarLabel">
+                        É os guri ñ tem jeito
+                    </h5>
+                    
+                    <button type="button" 
+                        class="btn-close btn-close-white shadow-none" 
+                        data-bs-dismiss="offcanvas" 
+                        aria-label="Close">
+                    </button>
+                </div>
+            
+                <!--Sidebar Body-->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a 
+                                class="nav-link text-white" 
+                                aria-current="page" 
+                                href="index.html"
+                                style="font-weight: bold;">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a 
+                                class="nav-link text-white" 
+                                href="favoritos.html"
+                                style="font-weight: bold;">
+                                Favoritos
+                            </a>
+                        </li>
+
+                        
+                        <!--Drop Down-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" 
+                                href="#" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                                style="font-weight: bold;">
+                                Meu Perfil
+                            </a>
+
+                            <ul class="dropdown-menu" 
+                            style="background-color:rgba(255, 255, 255, 0.15);
+                                    backdrop-filter: blur(30px);
+                                    ">
+                                
+                                <li>
+                                    <a 
+                                        href="#login" 
+                                        class="text-white text-decoration-none px-3 py-1 rounded-1" 
+                                        style="text-decoration: none; font-weight: bold; ;">
+                                        Exibir Perfil
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider " style="background-color: white;">
+                                </li>
+
+                                <li>
+                                    <a href="#signup" 
+                                        class="text-white text-decoration-none px-3 py-1 rounded-1" 
+                                        style="text-decoration: none; font-weight: bold;">
+                                        Deslogar
+                                    </a>
+                                </li>
+                              
+                                <li>
+                                    <hr class="dropdown-divider " style="background-color: white;">
+                                </li>
+                              
+                                <li>
+                                    <a 
+                                        class="text-white text-decoration-none px-3 py-1 rounded-1" 
+                                        style="font-weight: bold;"
+                                        href="#">
+                                        EXCLUIR PERFIL
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <!--LOGIN/CADASTRAR-->
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                        
+                        <a href="login.html" 
+                            class="usuarioEntrar text-white text-decoration-none px-3 py-1 rounded-1 " 
+                              style="text-decoration: none; font-weight: bold; font-size: x-large;">
+                            Entrar
+                        </a>
+                        
+                        <a  href="cadastro.html" 
+                            class="usuarioCadastro text-white text-decoration-none px-3 py-1 rounded-1" 
+                            style="text-decoration: none; font-weight: bold; font-size: x-large;">
+                            Criar Conta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>

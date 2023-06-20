@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/3286879.jpg') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cadastro{ 
+    width: 50%;
+    margin-top: 4%;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+    box-shadow: 4px 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cadastro h1{
+    font-size: 350%;
+    margin-bottom: 25px;
+    font-family: cursive;
+    color: white;
+}
+
+.cadastro form{
+    font-size: 20px;
+}
+
+
+
+.cadastro form .form-group{
+    margin-bottom: 12px;
+}
+
+.cadastro form input[type="submit"]{
+    font-size: 20px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+.form-control {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+  }
+
+  label{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+/*------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------NAVBAR-----------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+@media(max-width: 991px){
+    .sidebar{
+        background-color:rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.nav-link:hover{
+    background-color:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.usuarioEntrar:hover{
+    background-color:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    
+}
+
+.usuarioEntrar a:active{
+    background-color:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    
+}
+
+
+.usuarioCadastro:hover{
+    background-color:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.dropdown-menu li:hover{
+    background-color:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
