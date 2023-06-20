@@ -29,8 +29,8 @@ function openModal(edit = false, index = 0) {  //abrir a tela de cadastro da pes
       method: 'POST',
       body: JSON.stringify(novoUsuario)
     })
-      .then(response => response.json())
-      .then(data => {
+      .then(response => response.json())  //1° then -resposta em formato JSON
+      .then(data => {                     //esse then era pra receber dados de resposta do servidor
         console.log("ok");
       })
       .catch(error => {
