@@ -1,155 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt- BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junte-se a Nós!</title>
-
-     <!--Arquivo Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-     <!--Arquivo css-->
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/index.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>EVENT'ON</title>
 </head>
-<body class="vh-100 overflow-hidden">
+<body style="background-color: #0d0f25;">
 
-    
- <!-----------------------------------------------NAVBAR--------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+<!---------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------NAVBAR--------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         
-        <div class="container">
-            <a class="navbar-brand fs-4" 
-                style="font-weight: bold;"  
-                href="#">É os guri ñ tem jeito
-            </a>
-            
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="offcanvas" 
-                data-bs-target="#offcanvasNavbar" 
-                aria-controls="offcanvasNavbar" 
-                aria-label="Toggle navigation">
-                
-                <span 
-                    class="navbar-toggler-icon">
-                </span>
-            </button>
+  <div class="container">
+      <a class="navbar-brand fs-4" 
+          style="font-weight: bold;"  
+          href="#">EVENT'ON
+      </a>
+      
+      <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="offcanvas" 
+          data-bs-target="#offcanvasNavbar" 
+          aria-controls="offcanvasNavbar" 
+          aria-label="Toggle navigation">
+          
+          <span 
+              class="navbar-toggler-icon">
+          </span>
+      </button>
 
-            <!--Sidebar-->
-            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                
-                <!--sidebar header-->
-                <div class="offcanvas-header text-white border-bottom">
-                    <h5 
-                        class="offcanvas-title" 
-                        id="offcanvasNavbarLabel">
-                        É os guri ñ tem jeito
-                    </h5>
-                    
-                    <button type="button" 
-                        class="btn-close btn-close-white shadow-none" 
-                        data-bs-dismiss="offcanvas" 
-                        aria-label="Close">
-                    </button>
-                </div>
-            
-                <!--Sidebar Body-->
-                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-                
-                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                        <li class="nav-item mx-2">
-                            <a 
-                                class="nav-link text-white" 
-                                aria-current="page" 
-                                href="index.html"
-                                style="font-weight: bold;">
-                                Home
-                            </a>
-                        </li>
+      <!--Sidebar-->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          
+          <!--sidebar header-->
+          <div class="offcanvas-header text-white border-bottom">
+              
+              <button type="button" 
+                  class="btn-close btn-close-white shadow-none" 
+                  data-bs-dismiss="offcanvas" 
+                  aria-label="Close">
+              </button>
+          </div>
+      
+          <!--Sidebar Body-->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                  <li class="nav-item mx-2">
+                      <a 
+                          class="nav-link text-white" 
+                          aria-current="page" 
+                          href="index.html"
+                          style="font-weight: bold;">
+                          Home
+                      </a>
+                  </li>
 
-                        <li class="nav-item mx-2">
-                            <a 
-                                class="nav-link text-white" 
-                                href="favoritos.html"
-                                style="font-weight: bold;">
-                                Favoritos
-                            </a>
-                        </li>
+                  <li class="nav-item mx-2">
+                      <a 
+                          class="nav-link text-white" 
+                          href="favoritos.html"
+                          style="font-weight: bold;">
+                          Favoritos
+                      </a>
+                  </li>
 
+                  
+                  <!--Drop Down-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" 
+                          href="#" 
+                          role="button" 
+                          data-bs-toggle="dropdown" 
+                          aria-expanded="false"
+                          style="font-weight: bold;">
+                          Meu Perfil
+                      </a>
+
+                      <ul class="dropdown-menu" style="background-color:rgba(255, 255, 255, 0.15);
+                      backdrop-filter: blur(30px);">
+                          
+                          <li>
+                              <a 
+                                  href="#login" 
+                                  class="text-white text-decoration-none px-3 py-1 rounded-1" 
+                                  style="text-decoration: none; font-weight: bold;">
+                                  Exibir Perfil
+                              </a>
+                          </li>
+
+                          <li>
+                              <hr class="dropdown-divider " style="background-color: white;">
+                          </li>
+
+                          <li>
+                              <a href="#signup" 
+                                  class="text-white text-decoration-none px-3 py-1 rounded-1" 
+                                  style="text-decoration: none; font-weight: bold;">
+                                  Deslogar
+                              </a>
+                          </li>
                         
-                        <!--Drop Down-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" 
-                                href="#" 
-                                role="button" 
-                                data-bs-toggle="dropdown" 
-                                aria-expanded="false"
-                                style="font-weight: bold;">
-                                Meu Perfil
-                            </a>
-
-                            <ul class="dropdown-menu" 
-                            style="background-color:rgba(255, 255, 255, 0.15);
-                                    backdrop-filter: blur(30px);
-                                    ">
-                                
-                                <li>
-                                    <a 
-                                        href="#login" 
-                                        class="text-white text-decoration-none px-3 py-1 rounded-1" 
-                                        style="text-decoration: none; font-weight: bold; ;">
-                                        Exibir Perfil
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <hr class="dropdown-divider " style="background-color: white;">
-                                </li>
-
-                                <li>
-                                    <a href="#signup" 
-                                        class="text-white text-decoration-none px-3 py-1 rounded-1" 
-                                        style="text-decoration: none; font-weight: bold;">
-                                        Deslogar
-                                    </a>
-                                </li>
-                              
-                                <li>
-                                    <hr class="dropdown-divider " style="background-color: white;">
-                                </li>
-                              
-                                <li>
-                                    <a 
-                                        class="text-white text-decoration-none px-3 py-1 rounded-1" 
-                                        style="font-weight: bold;"
-                                        href="#">
-                                        EXCLUIR PERFIL
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-
-                    <!--LOGIN/CADASTRAR-->
-                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                          <li>
+                              <hr class="dropdown-divider " style="background-color: white;">
+                          </li>
                         
-                        <a href="login.html" 
-                            class="usuarioEntrar text-white text-decoration-none px-3 py-1 rounded-1 " 
-                              style="text-decoration: none; font-weight: bold; font-size: x-large;">
-                            Entrar
-                        </a>
-                        
-                        <a  href="cadastro.html" 
-                            class="usuarioCadastro text-white text-decoration-none px-3 py-1 rounded-1" 
-                            style="text-decoration: none; font-weight: bold; font-size: x-large;">
-                            Criar Conta
-                        </a>
-                    </div>
-                </div>
-            </div>
+                          <li>
+                              <a 
+                                  class="text-white text-decoration-none px-3 py-1 rounded-1" 
+                                  style="font-weight: bold;"
+                                  href="#">
+                                  EXCLUIR PERFIL
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+
+              </ul>
+
+              <!--LOGIN/CADASTRAR-->
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                  
+                  <a href="login.html" 
+                      class="usuarioEntrar text-white text-decoration-none px-3 py-1 rounded-1" 
+                        style="text-decoration: none; font-weight: bold; font-size: x-large;">
+                      Entrar
+                  </a>
+                  
+                  <a  href="cadastro.html" 
+                      class="usuarioCadastro text-white text-decoration-none px-3 py-1 rounded-1" 
+                      style="text-decoration: none; font-weight: bold; font-size: x-large;">
+                      Criar Conta
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+
+    <!--INICIO do Topo do Site-->
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light" id="titulo">░▒▓█ EVENT'𝙾𝙽 █▓▒░</h1>
         </div>
-    </nav>
+      </div>
+    </section>
+    
+    <!--INICIO da Mostragem de Eventos-->
+    <div class="album py-5 bg-body-tertiary" style="background-image: url('../css/images/3286879.jpg');">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          <!--PRIMEIRO EVENTO-->
+          <div class="col">
+            <div class="card shadow-sm">                                                                                                                                                                                                                      
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><title>FESTINHA DO ADM</title><rect width="100%" height="100%" fill="#363636"></rect><text x="50%" y="50%" fill="white" dy=".3em">FESTINHA DO ADM</text></svg>
+              <div class="card-body">
+
+                <!--Resumo do Evento-->
+                <p class="card-text">Acontecerá uma grande festa na casa do Heltin, todos estão convidados e não precisa levar nada, o ADM está tão generoso que ira pagar tudo!!!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="CRUD/edit.html">Edit</a></button>
+                  </div>
+
+                  <!--Data e Hora-->
+                  <small class="text-body-secondary">Dia 20/07 as 19:00</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--SEGUNDO EVENTO-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>ANO NOVO DO THURZIN</title><rect width="100%" height="100%" fill="#363636"></rect><text x="50%" y="50%" fill="white" dy=".3em">ANO NOVO DO THURZIN</text></svg>
+              <div class="card-body">
+
+                <!--Resumo do Evento-->
+                <p class="card-text">Arthur ira dar uma grande Festa de Fim de Ano, segundo o mesmo todos podem comparecer a vontade e não precisam se preocupar com compra de bebidas ou comidas, afinal o mesmo veio a receber uma grande herança recentemente.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="CRUD/edit.html">Edit</a></button>
+                  </div>
+
+                  <!--Data e Hora-->
+                  <small class="text-body-secondary">Dia 30/12 as 20:10</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--TERCEIRO EVENTO-->
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>ALMOÇO DA JUJU</title><rect width="100%" height="100%" fill="#363636"></rect><text x="50%" y="50%" fill="white" dy=".3em">ALMOÇO DA JUJU</text></svg>
+              <div class="card-body">
+
+                <!--Resumo do Evento-->
+                <p class="card-text">Havera um grande almoço na casa da Professora Juliana, todos estão convidados, mas levem o que forem beber</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="CRUD/edit.html">Edit</a></button>
+                  </div>
+
+                  <!--Data e Hora-->
+                  <small class="text-body-secondary">Dia 02/09 as 11:30</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--FIM da Mostragem de Eventos-->
+</body>
+</html>
