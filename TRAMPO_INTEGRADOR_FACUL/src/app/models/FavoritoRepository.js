@@ -1,8 +1,6 @@
-//conexão com o banco de dados
 const conexao = require('../database/conexao');
 
 
-// Cria um novo favoritoss no banco 
 const create = async (favoritos) => {
   const sql = "INSERT INTO favoritos SET ?;";
   try {
@@ -84,6 +82,4 @@ const deletefavorito = async (id) => {
   }
 };
 
-
-// Exporta as funções do repositório
 module.exports = { create, findAll, findById, update, deletefavorito };
