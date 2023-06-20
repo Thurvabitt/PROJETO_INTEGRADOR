@@ -1,8 +1,7 @@
-//conexão com o banco de dados
+//conexão c/ banco
 const conexao = require('../database/conexao');
 
 
-// Cria um novo favoritoss no banco 
 const create = async (events) => {
   const sql = "INSERT INTO events SET ?;";
   try {
