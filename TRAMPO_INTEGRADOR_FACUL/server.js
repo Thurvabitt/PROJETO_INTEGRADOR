@@ -15,10 +15,12 @@ app.use(cors(corsOptions))
 // Importando as rotas de usuário e favoritos
 const Routes = require('./src/app/routes/UsuarioRota')
 const FavRoutes = require('./src/app/routes/FavoritoRota')
+const EventRoutes = require('./src/app/routes/EventRota')
 
 // Definindo o caminho das rotas
 app.use('/usuarios', Routes)
 app.use('/favoritos', FavRoutes)
+app.use('/events', EventRoutes)
 
 // Iniciando o servidor
 app.listen(PORT, () =>{
