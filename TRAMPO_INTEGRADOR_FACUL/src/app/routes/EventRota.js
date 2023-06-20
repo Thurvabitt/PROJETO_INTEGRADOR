@@ -3,20 +3,19 @@ const express = require('express')
 const EventController = require('../controllers/EventController')
 const EventRouter = express.Router()
 
-//Adicionar EVENTOS
+//Adicionar
 EventRouter.post('/adicionarEvento', (req, res) => EventController.store(req, res));
 
-//listar EVENTOS
+//listar
 EventRouter.get('/listarEvento', EventController.index);
 
-//buscar EVENTOS por ID
+//buscar pelo ID
 EventRouter.get('/buscarPorId/:id', EventController.show);
 
-//atualizar EVENTOS
+//atualizar
 EventRouter.put('/atualizarEvento/:id', EventController.update);
 
-//deletar EVENTOS por ID
+//deletar pelo ID
 EventRouter.delete('/deletarEvento/:id', EventController.deleteevents);
 
-// Exporta as rotas
 module.exports = EventRouter
